@@ -9,6 +9,38 @@ html {
 }
 
 body {
+    color: var(--text-color);
+    background: var(--body-bg-color);
     font-family: "Gordita", sans-serif;
     font-size: 1.6rem;
+}
+
+a,
+img,
+button,
+textarea,
+select,
+input {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+.icon {
+    filter: var(--icon-color);
 }
