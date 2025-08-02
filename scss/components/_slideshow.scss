@@ -2,11 +2,6 @@
 
 .slideshow {
     position: relative;
-    margin: 40px 0;
-
-    @include abstracts.breakpoint(md) {
-        margin: 30px 0;
-    }
 
     &__inner {
         display: flex;
@@ -20,7 +15,7 @@
         width: 100%;
         padding-top: 34%;
 
-        @include abstracts.breakpoint(md) {
+        @include abstracts.screen(md) {
             padding-top: 49.55%;
         }
     }
@@ -54,7 +49,7 @@
         font-weight: 500;
         line-height: 144.444%;
 
-        @include abstracts.breakpoint(md) {
+        @include abstracts.screen(md) {
             font-size: 1.4rem;
             line-height: 142.857%;
         }
@@ -82,7 +77,7 @@
             content: "";
             translate: 0 -50%;
 
-            @include abstracts.breakpoint(md) {
+            @include abstracts.screen(md) {
                 border-width: 3px;
             }
         }

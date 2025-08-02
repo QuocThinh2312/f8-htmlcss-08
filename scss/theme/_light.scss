@@ -19,8 +19,18 @@ html {
     --sidebar-bg-color: #fff;
     --sidebar-shadow-color: rgba(200, 200, 200, 0.4);
 
-    @include abstracts.breakpoint(lg) {
+    // Category item
+    --cate-item-bg-color: #eee;
+    --cate-item-thumb-bg-color: #ffffff;
+    --cate-item-title-color: #000;
+
+    @include abstracts.screen(lg) {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.2);
+    }
+
+    @include abstracts.screen(md) {
+        --cate-item-bg-color: #fff;
+        --cate-item-title-color: #1a162e;
     }
 }
